@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="height: 100%">
+<center><div onclick="click1()" id="click" style="width: 100%;height:95vh;display: flex; justify-content: center; align-items: center"></div></center>
+<audio id="click_audio">
+ <source src="zvuk-vybivaniya-monety-iz-igry-super-mario.mp3">
+</audio>
+</body>
+<script>
+    i=0
+    function click1 () {
+        i++
+        document.getElementById("click_audio").play()
+        document.getElementById("click" ).innerHTML=i
+        document.getElementById("click").setAttribute("style","background: green;" +
+            "width: 100%;" +
+            "height:95vh; " +
+            "display: flex;" +
+            "justify-content: center; " +
+            "align-items: center")
+    }
+</script>
+</html>
